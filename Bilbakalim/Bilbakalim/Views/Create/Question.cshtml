@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Question";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Question</h2>
+@using (Html.BeginForm())
+{
+
+    <p>Soru</p><br />
+    @Html.TextBox("s", null, new { @class = "", name = "txtSoru", onchange = "SoruAdedi()" })
+    <br /><br />
+    <p>Cevap1</p>
+    @Html.TextBox("c1", null, new { @class = "" })
+    <br />
+    <p>Cevap2</p>
+    @Html.TextBox("c2", null, new { @class = "" })
+    <br />
+    <p>Cevap3</p>
+    @Html.TextBox("c3", null, new { @class = "" })
+    <br />
+    <p>Cevap4</p>
+    @Html.TextBox("c4", null, new { @class = "" })
+    <br />
+    <p>Cevap5</p>
+    @Html.TextBox("c5", null, new { @class = "" })
+    <br />
+    <p>Cevap6</p>
+    @Html.TextBox("c6", null, new { @class = "" })
+
+    <input type="submit" value="Ekle" />
+}
+<script>
+    function SoruAdedi() {
+        var secim = document.getElementById("txtSoru").value;
+
+    }
+</script>

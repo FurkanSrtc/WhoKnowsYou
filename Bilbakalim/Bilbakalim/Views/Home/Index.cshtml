@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="row  mt-5  pt-5">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-8 justify-content-md-center">
+
+        <h2>Arkadaşlarının Seni Ne Kadar Tanıdığını Test Et!</h2>
+
+
+        <div class="form-group col-xs-12 col-md-12">
+
+            @Html.TextBox("name", null, new { @class = "form-control input-lg  mw-100", id = "txtName", placeholder = "Adınızı Girin (ör. Furkan)" })
+
+        </div>
+
+        <div class="col-xs-12 col-md-12 w-100">
+
+            <button type="submit" id="btnSave" name="Command" class="button w-100" style="vertical-align:middle" value="Save"><span>Devam </span></button>
+
+        </div>
+
+    </div>
+    <div class="col-md-2"></div>
+</div>
+
+
+
