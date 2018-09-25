@@ -14,7 +14,7 @@ namespace Bilbakalim.Controllers
         public ActionResult Question()
         {
             DatabaseContext db = new DatabaseContext();
-            List<Sorular> sorular = db.Sorular.ToList(); //select * from sorular..
+            List<Sorular> sorular = db.Sorular.ToList(); //select * from sorular
 
 
             return View();
